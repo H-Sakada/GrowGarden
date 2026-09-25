@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LifeGarden - Grow Your Habits</title>
+<meta name="description" content="LifeGarden turns your daily habits into a garden. Complete a habit and its plant grows. Skip it and the plant wilts.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Outfit:wght@500;600&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/@phosphor-icons/web" defer></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-nav">
+  <div class="wrap site-nav__inner">
+    <a class="brand" href="index.html"><i class="ph ph-plant" aria-hidden="true"></i> LifeGarden</a>
+    <nav aria-label="Main">
+      <ul class="site-nav__links">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="garden.html">My Garden</a></li>
+        <li><a href="guide.html">Habit Guide</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- Hero: asymmetric split -->
+  <section class="wrap hero">
+    <div class="hero__copy">
+      <h1 class="rise">Your habits, growing where you can see them.</h1>
+      <p class="lede rise" style="--i:1">
+        Every check-in feeds a plant. Miss a day and it wilts. Your garden is your streak, made visible.
+      </p>
+      <div class="hero__actions rise" style="--i:2">
+        <a class="btn btn--primary" href="garden.html">Open my garden</a>
+        <a class="btn btn--ghost" href="#how">How it works</a>
+      </div>
+    </div>
+    <div class="hero__art rise" style="--i:1">
+      <img src="images/hero-plants.jpg"
+           alt="A bright apartment corner filled with potted green houseplants" width="750" height="1000">
+    </div>
+  </section>
+
+  <!-- How it works: offset stagger -->
+  <section class="wrap section" id="how">
+    <h2>Three things, then the garden does the rest.</h2>
+    <p class="lede" style="margin-block: 1rem 3rem;">No streak counters to stare at. Just a plant that looks different today than it did last week.</p>
+    <div class="steps">
+      <article class="step">
+        <i class="ph ph-grains" aria-hidden="true"></i>
+        <h3>Plant a habit</h3>
+        <p>Pick something small enough that a bad day cannot break it. Drinking water counts.</p>
+      </article>
+      <article class="step">
+        <i class="ph ph-check-circle" aria-hidden="true"></i>
+        <h3>Check in daily</h3>
+        <p>One tap when you have done it. That is the whole interaction, and it takes a second.</p>
+      </article>
+      <article class="step">
+        <i class="ph ph-tree" aria-hidden="true"></i>
+        <h3>Watch it change</h3>
+        <p>Seedling, sprout, leafing, blooming, tree. Five stages you reach by turning up.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Why it works: bento, 4 items, 4 cells -->
+  <section class="wrap section">
+    <h2 style="margin-bottom: 2.5rem;">Why a garden beats a checklist.</h2>
+    <div class="bento">
+
+      <article class="bento__cell bento__cell--wide">
+        <div class="bento__media">
+          <img src="images/leaves-macro.jpg"
+               alt="Close view of fresh green leaves" width="900" height="676">
+        </div>
+        <div class="bento__body">
+          <h3>Progress you can look at</h3>
+          <p>A checklist resets every morning and keeps none of the credit. A plant carries every day you showed up in its shape.</p>
+        </div>
+      </article>
+
+      <article class="bento__cell bento__cell--tall bento__cell--tinted">
+        <div class="bento__body">
+          <h3>Wilting is not failing</h3>
+          <p>Skip a day and the plant droops. It does not die. You water it tomorrow and it comes back.</p>
+        </div>
+      </article>
+
+      <article class="bento__cell">
+        <div class="bento__body">
+          <h3>Five stages</h3>
+          <p>Seedling to tree, so the far end feels reachable.</p>
+        </div>
+      </article>
+
+      <article class="bento__cell">
+        <div class="bento__media" style="min-height: 9rem;">
+          <img src="images/sapling.jpg"
+               alt="Hands planting a young sapling in dark soil" width="700" height="466">
+        </div>
+        <div class="bento__body">
+          <h3>Start from seed</h3>
+          <p>Every plant here began as one small thing someone did today.</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- CTA band -->
+  <section class="wrap section" style="padding-top:0;">
+    <div class="band">
+      <h2>Plant the first one today.</h2>
+      <p>Six habits are already growing in the sample garden. Have a look at what a few weeks builds.</p>
+      <a class="btn btn--primary" href="garden.html">Open my garden</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap site-footer__inner">
+    <div>
+      <a class="brand" href="index.html"><i class="ph ph-plant" aria-hidden="true"></i> LifeGarden</a>
+      <p style="color: var(--muted); font-size: var(--step--1); margin-top: .5rem;">Habit tracking that grows on you.</p>
+    </div>
+    <ul class="site-footer__nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="garden.html">My Garden</a></li>
+      <li><a href="guide.html">Habit Guide</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <small>Student project, American University of Phnom Penh, 2026.</small>
+  </div>
+</footer>
+
+</body>
+</html>

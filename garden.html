@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Garden - LifeGarden</title>
+<meta name="description" content="Every habit you track in LifeGarden, shown as a plant card and a progress table.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Outfit:wght@500;600&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/@phosphor-icons/web" defer></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-nav">
+  <div class="wrap site-nav__inner">
+    <a class="brand" href="index.html"><i class="ph ph-plant" aria-hidden="true"></i> LifeGarden</a>
+    <nav aria-label="Main">
+      <ul class="site-nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="garden.html" aria-current="page">My Garden</a></li>
+        <li><a href="guide.html">Habit Guide</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <div class="wrap">
+    <header class="page-head">
+      <h1>My Garden</h1>
+      <p class="lede">Six plants, six habits. The ones you have watered recently look it.</p>
+    </header>
+  </div>
+
+  <!-- Plant cards -->
+  <section class="wrap section" style="padding-bottom: clamp(2rem, 4vw, 3rem);">
+    <div class="plants">
+
+      <article class="plant">
+        <div class="plant__art">
+          <img src="images/habit-water.jpg" alt="A woman sitting at a table with a glass of water" width="466" height="700" loading="lazy">
+        </div>
+        <div class="plant__top">
+          <h3>Drink water</h3>
+          <span class="stage"><i class="ph ph-tree" aria-hidden="true"></i> Tree</span>
+        </div>
+        <p class="plant__meta">34 day streak, watered this morning</p>
+      </article>
+
+      <article class="plant">
+        <div class="plant__art">
+          <img src="images/habit-walk.jpg" alt="A tree lined footpath through a park on a bright morning" width="700" height="393" loading="lazy">
+        </div>
+        <div class="plant__top">
+          <h3>Morning walk</h3>
+          <span class="stage"><i class="ph ph-flower" aria-hidden="true"></i> Blooming</span>
+        </div>
+        <p class="plant__meta">19 day streak, watered yesterday</p>
+      </article>
+
+      <article class="plant">
+        <div class="plant__art">
+          <img src="images/habit-read.jpg" alt="A person reading a book in a garden surrounded by green plants" width="700" height="466" loading="lazy">
+        </div>
+        <div class="plant__top">
+          <h3>Read 20 pages</h3>
+          <span class="stage"><i class="ph ph-leaf" aria-hidden="true"></i> Leafing</span>
+        </div>
+        <p class="plant__meta">12 day streak, watered this morning</p>
+      </article>
+
+      <article class="plant">
+        <div class="plant__art">
+          <img src="images/habit-sleep.jpg" alt="A single new cyclamen leaf resting among fallen autumn leaves" width="700" height="466" loading="lazy">
+        </div>
+        <div class="plant__top">
+          <h3>Sleep by 11pm</h3>
+          <span class="stage"><i class="ph ph-plant" aria-hidden="true"></i> Sprout</span>
+        </div>
+        <p class="plant__meta">5 day streak, needs water today</p>
+      </article>
+
+      <article class="plant">
+        <div class="plant__art">
+          <img src="images/habit-stretch.jpg" alt="A person stretching on an exercise mat at home" width="700" height="467" loading="lazy">
+        </div>
+        <div class="plant__top">
+          <h3>Stretch</h3>
+          <span class="stage"><i class="ph ph-leaf" aria-hidden="true"></i> Leafing</span>
+        </div>
+        <p class="plant__meta">61 day streak, watered this morning</p>
+      </article>
+
+      <article class="plant plant--new">
+        <i class="ph ph-plus-circle" aria-hidden="true"></i>
+        <h3 style="font-size: var(--step-0);">Plant a new habit</h3>
+        <p class="plant__meta" style="max-width: 22ch;">Start small. One you can do on your worst day.</p>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Progress table -->
+  <section class="wrap section" style="padding-top: clamp(2rem, 4vw, 3rem);">
+    <h2 style="margin-bottom: 1.5rem;">This month at a glance</h2>
+    <div class="table-scroll">
+      <!-- sample data for the prototype -->
+      <table>
+        <caption>Habit progress for September 2026. Progress is the share of days completed this month.</caption>
+        <thead>
+          <tr>
+            <th scope="col">Habit</th>
+            <th scope="col">Progress</th>
+            <th scope="col">Streak</th>
+            <th scope="col">Growth stage</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Drink water</th>
+            <td>
+              <div class="meter">
+                <span class="meter__bar"><span class="meter__fill" style="width:92%"></span></span>
+                <span class="meter__num">92%</span>
+              </div>
+            </td>
+            <td>34 days</td>
+            <td><span class="stage"><i class="ph ph-tree" aria-hidden="true"></i> Tree</span></td>
+          </tr>
+          <tr>
+            <th scope="row">Stretch</th>
+            <td>
+              <div class="meter">
+                <span class="meter__bar"><span class="meter__fill" style="width:78%"></span></span>
+                <span class="meter__num">78%</span>
+              </div>
+            </td>
+            <td>61 days</td>
+            <td><span class="stage"><i class="ph ph-leaf" aria-hidden="true"></i> Leafing</span></td>
+          </tr>
+          <tr>
+            <th scope="row">Morning walk</th>
+            <td>
+              <div class="meter">
+                <span class="meter__bar"><span class="meter__fill" style="width:66%"></span></span>
+                <span class="meter__num">66%</span>
+              </div>
+            </td>
+            <td>19 days</td>
+            <td><span class="stage"><i class="ph ph-flower" aria-hidden="true"></i> Blooming</span></td>
+          </tr>
+          <tr>
+            <th scope="row">Read 20 pages</th>
+            <td>
+              <div class="meter">
+                <span class="meter__bar"><span class="meter__fill" style="width:41%"></span></span>
+                <span class="meter__num">41%</span>
+              </div>
+            </td>
+            <td>12 days</td>
+            <td><span class="stage"><i class="ph ph-leaf" aria-hidden="true"></i> Leafing</span></td>
+          </tr>
+          <tr>
+            <th scope="row">Sleep by 11pm</th>
+            <td>
+              <div class="meter">
+                <span class="meter__bar"><span class="meter__fill" style="width:23%"></span></span>
+                <span class="meter__num">23%</span>
+              </div>
+            </td>
+            <td>5 days</td>
+            <td><span class="stage"><i class="ph ph-plant" aria-hidden="true"></i> Sprout</span></td>
+          </tr>
+          <tr>
+            <th scope="row">No phone at dinner</th>
+            <td>
+              <div class="meter">
+                <span class="meter__bar"><span class="meter__fill" style="width:8%"></span></span>
+                <span class="meter__num">8%</span>
+              </div>
+            </td>
+            <td>2 days</td>
+            <td><span class="stage"><i class="ph ph-grains" aria-hidden="true"></i> Seedling</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap site-footer__inner">
+    <div>
+      <a class="brand" href="index.html"><i class="ph ph-plant" aria-hidden="true"></i> LifeGarden</a>
+      <p style="color: var(--muted); font-size: var(--step--1); margin-top: .5rem;">Habit tracking that grows on you.</p>
+    </div>
+    <ul class="site-footer__nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="garden.html">My Garden</a></li>
+      <li><a href="guide.html">Habit Guide</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <small>Student project, American University of Phnom Penh, 2026.</small>
+  </div>
+</footer>
+
+</body>
+</html>

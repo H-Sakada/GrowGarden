@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact - LifeGarden</title>
+<meta name="description" content="Suggest a habit for the LifeGarden library or send feedback about the app.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Outfit:wght@500;600&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/@phosphor-icons/web" defer></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-nav">
+  <div class="wrap site-nav__inner">
+    <a class="brand" href="index.html"><i class="ph ph-plant" aria-hidden="true"></i> LifeGarden</a>
+    <nav aria-label="Main">
+      <ul class="site-nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="garden.html">My Garden</a></li>
+        <li><a href="guide.html">Habit Guide</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <div class="wrap">
+    <header class="page-head">
+      <h1>Contact</h1>
+      <p class="lede">Suggest a habit for the library, or tell us what is not working. Both go to the same inbox.</p>
+    </header>
+  </div>
+
+  <section class="wrap section">
+    <div class="contact-layout">
+
+      <form class="form" action="#" method="post">
+
+        <div class="field">
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name" required autocomplete="name" placeholder="Sreyleak Chan">
+          <p class="help">So we know who to reply to.</p>
+          <p class="error">Please enter your name.</p>
+        </div>
+
+        <div class="field">
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" required autocomplete="email" placeholder="you@example.com">
+          <p class="help">We reply within a few days.</p>
+          <p class="error">Please enter a valid email address.</p>
+        </div>
+
+        <div class="field">
+          <label for="topic">What is this about</label>
+          <select id="topic" name="topic" required>
+            <option value="habit">Suggesting a new habit</option>
+            <option value="feedback">Feedback on the app</option>
+            <option value="bug">Something is broken</option>
+          </select>
+          <p class="help">Pick the closest option.</p>
+        </div>
+
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required minlength="10"
+                    placeholder="Tell us the habit you would like to track, and why it matters to you."></textarea>
+          <p class="help">A sentence or two is plenty.</p>
+          <p class="error">Please write at least 10 characters.</p>
+        </div>
+
+        <div>
+          <button class="btn btn--primary" type="submit">Send message</button>
+        </div>
+
+      </form>
+
+      <aside class="aside-card">
+        <h3>Other ways to reach us</h3>
+        <dl>
+          <dt>Email</dt>
+          <dd>hello@lifegarden.app</dd>
+
+          <dt>Phone</dt>
+          <dd>+855 17 482 316</dd>
+
+          <dt>Where we are</dt>
+          <dd>American University of Phnom Penh<br>Phnom Penh, Cambodia</dd>
+        </dl>
+      </aside>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap site-footer__inner">
+    <div>
+      <a class="brand" href="index.html"><i class="ph ph-plant" aria-hidden="true"></i> LifeGarden</a>
+      <p style="color: var(--muted); font-size: var(--step--1); margin-top: .5rem;">Habit tracking that grows on you.</p>
+    </div>
+    <ul class="site-footer__nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="garden.html">My Garden</a></li>
+      <li><a href="guide.html">Habit Guide</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <small>Student project, American University of Phnom Penh, 2026.</small>
+  </div>
+</footer>
+
+</body>
+</html>
