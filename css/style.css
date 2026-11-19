@@ -214,6 +214,22 @@ a { color: inherit; }
 .hero__copy { display: grid; gap: 1.5rem; justify-items: start; }
 .hero__copy p { max-width: 34ch; }
 
+.hero__growing {
+  position: relative;
+  display: inline-block;
+  color: var(--brand);
+}
+
+.hero__growing::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 -0.1em;
+  height: 0.07em;
+  border-radius: 1em;
+  background: var(--accent);
+  transform-origin: left;
+}
+
 .hero__actions { display: flex; flex-wrap: wrap; gap: 0.75rem; }
 
 .hero__art {
@@ -583,6 +599,25 @@ tbody th { font-weight: 500; }
     animation-delay: calc(var(--i, 0) * 90ms);
   }
   .page-head > .lede { --i: 1; }
+
+  .hero__growing {
+    transform-origin: center bottom;
+    animation: word-grow 1.8s var(--ease) 0.65s 2;
+  }
+
+  .hero__growing::after {
+    animation: underline-grow 0.9s var(--ease) 0.65s both;
+  }
+
+  @keyframes word-grow {
+    0%, 100% { transform: scale(1); }
+    45% { transform: scale(1.08); }
+  }
+
+  @keyframes underline-grow {
+    from { transform: scaleX(0); }
+    to { transform: scaleX(1); }
+  }
 
   @keyframes rise {
     from { opacity: 0; transform: translateY(14px); }
